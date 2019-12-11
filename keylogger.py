@@ -1,6 +1,6 @@
 import pynput
 
-from pynput.keyboard import Key.Listener
+from pynput.keyboard import Key, Listener
 
 keys = []
 count = 0
